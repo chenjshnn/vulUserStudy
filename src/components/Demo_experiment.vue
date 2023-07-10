@@ -6,8 +6,8 @@
     </div>
     <div class="container2">
       <p class="question-title"> Please find the source github file for this CVE link: <a :href="question.title" target="_blank">{{question.title}}</a> </p>
-      <p class="question-title auto-wrap"> Related Repository: <a :href="question.recommendated" target="_blank">{{question.recommendated}}</a></p>
-      <p class="question-title auto-wrap"> Related Files: </p>
+      <p class="question-title"> Related Repository: <a :href="question.recommendated" target="_blank">{{question.recommendated}}</a></p>
+      <p class="question-title"> Related Files: </p>
       <ul>
         <li v-for="item in question.recommendatedFiles" :key="item.id"> <a :href="item" target="_blank">{{item}}</a> </li>
       </ul>
@@ -205,8 +205,8 @@ export default {
 .next-button {
   margin-left: auto;
 }
-.auto-wrap {
-  white-space: break-word;
-  width: 90%;
+p, li {
+  word-wrap: break-word;
 }
+
 </style>
