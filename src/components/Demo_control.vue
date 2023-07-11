@@ -59,9 +59,9 @@ export default {
         },
        
         {
-          title: 'https://nvd.nist.gov/vuln/detail/CVE-2014-3569',
-          recommendated: "https://github.com/openssl/openssl/tree/5ad4fdce41bb1ce7762b70fb50f732f70e3772cf",
-          recommendatedFiles: ['https://github.com/openssl/openssl/blob/5ad4fdce41bb1ce7762b70fb50f732f70e3772cf/ssl/s3_srvr.c'],
+          title: 'https://nvd.nist.gov/vuln/detail/CVE-2020-24978',
+          recommendated: "https://github.com/netwide-assembler/nasm/tree/cc64861a6187de89bf91acb344207c7ae5880bea",
+          recommendatedFiles: ['https://github.com/netwide-assembler/nasm/blob/cc64861a6187de89bf91acb344207c7ae5880bea/asm/preproc.c'],
         },
         // {
         //   title: 'https://nvd.nist.gov/vuln/detail/',
