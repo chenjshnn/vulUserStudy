@@ -55,6 +55,7 @@ export default {
       timer: null,
       showError: false,
       showRatingError: false,
+      flag_timeout: false,
       questions: [
         {
           title: 'https://nvd.nist.gov/vuln/detail/CVE-2014-9828',
@@ -134,6 +135,7 @@ export default {
         } else {
           // Time is up
           this.ableEdit = false
+          this.flag_timeout = true
         }
       }, 1000)
     },
@@ -144,7 +146,7 @@ export default {
     // },
 
     resetParameters() {
-      this.minutes = 10;
+      this.minutes = 5;
       this.seconds = 0;
       this.tupleIndex = 1;
       this.ableEdit = true;
@@ -153,6 +155,7 @@ export default {
       this.$refs['ratings'].resetParameters();
       this.ableEdit = true;
       this.showRatings = false;
+      this.flag_timeout = false;
       
       this.startTimer();
       // this.createAnswer(this.tupleIndex);
@@ -163,7 +166,7 @@ export default {
       this.answers['answer'] = this.$refs['reportTuples'].answer
 
       this.formErrors = [];
-      if (this.answers['answer'].trim().length === 0){
+      if (this.answers['answer'].trim().length === 0  && !this.flag_timeout){
         this.showError = true;
         return;
       }
