@@ -62,11 +62,10 @@ export default {
           recommendated: 'https://github.com/openssl/openssl/tree/5ad4fdce41bb1ce7762b70fb50f732f70e3772cf',
           recommendatedFiles: ['https://github.com/openssl/openssl/blob/5ad4fdce41bb1ce7762b70fb50f732f70e3772cf/ssl/s3_srvr.c'],
         },
-       
-        {
-          title: 'https://nvd.nist.gov/vuln/detail/CVE-2021-21841',
-          recommendated: "https://github.com/gpac/gpac/tree/70607fc71a671cf48a05e013a4e411429373dce7",
-          recommendatedFiles: ['https://github.com/gpac/gpac/blob/70607fc71a671cf48a05e013a4e411429373dce7/src/isomedia/box_code_base.c'],
+       {
+          title: 'https://nvd.nist.gov/vuln/detail/CVE-2020-24978',
+          recommendated: "https://github.com/netwide-assembler/nasm/tree/cc64861a6187de89bf91acb344207c7ae5880bea",
+          recommendatedFiles: ['https://github.com/netwide-assembler/nasm/blob/cc64861a6187de89bf91acb344207c7ae5880bea/asm/preproc.c'],
         },
         // {
         //   title: 'https://nvd.nist.gov/vuln/detail/',
