@@ -28,7 +28,7 @@ export default {
   data() {
     return {
       title: 'User Study about Safety Report',
-      introduction1: 'Welcome to our user study! In this study, you will be required to read <b>9</b> safety reports, and locate the vulnerable github file of the reported vulnerability. Each report should be completed within a <b>5-minute</b> time frame, and once the time is up, you will not be able to make any further changes and must move on to the next question.',
+      introduction1: 'Welcome to our user study! In this study, you will be required to read <b>9</b> safety reports, and locate the vulnerable github file of the reported vulnerability. Each report should be completed within a <b>10-minute</b> time frame, and once the time is up, you will not be able to make any further changes and must move on to the next question.',
       introduction2: 'For each report, you will need to search for the linked github file to the report and provide a confidence score of your choice. ',
       introduction3: 'To begin the study, please enter your name and click start. The first report will commence, and the timer will begin counting down.',
       name: ''

@@ -106,7 +106,7 @@ export default {
     // },
 
     resetParameters() {
-      this.minutes = 5;
+      this.minutes = 10;
       this.seconds = 0;
       this.tupleIndex = 1;
       this.ableEdit = true;

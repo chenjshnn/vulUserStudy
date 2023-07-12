@@ -97,7 +97,7 @@ export default {
         {
           title: 'https://nvd.nist.gov/vuln/detail/CVE-2021-22880 ',
           recommendated: "https://github.com/rails/rails/tree/bddb2c9b193c976dbe6a9a1358479d1792931986",
-          recommendatedFiles: 'https://github.com/rails/rails/blob/bddb2c9b193c976dbe6a9a1358479d1792931986/activerecord/test/cases/adapters/postgresql/serial_test.rb',
+          recommendatedFiles: ['https://github.com/rails/rails/blob/bddb2c9b193c976dbe6a9a1358479d1792931986/activerecord/test/cases/adapters/postgresql/serial_test.rb'],
         },
         
         {
@@ -146,7 +146,7 @@ export default {
     // },
 
     resetParameters() {
-      this.minutes = 5;
+      this.minutes = 10;
       this.seconds = 0;
       this.tupleIndex = 1;
       this.ableEdit = true;

@@ -41,7 +41,7 @@ export default {
   data() {
     return {
       questionIndex: 0,
-      minutes: 5,
+      minutes: 10,
       seconds: 0,
       ableEdit: true,
       answers: {},
@@ -100,7 +100,7 @@ export default {
     // },
 
     resetParameters() {
-      this.minutes = 5;
+      this.minutes = 10;
       this.seconds = 0;
       this.tupleIndex = 1;
       this.ableEdit = true;
