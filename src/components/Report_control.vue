@@ -51,6 +51,7 @@ export default {
       showError: false,
       showRatingError: false,
       flag_timeout: false,
+      startTime: new Date().toLocaleTimeString(),
       questions: [
         {
           title: 'https://nvd.nist.gov/vuln/detail/CVE-2014-9828',
@@ -153,11 +154,12 @@ export default {
       this.flag_timeout = false;
       
       this.startTimer();
+      
+      this.startTime = new Date().toLocaleTimeString();
       // this.createAnswer(this.tupleIndex);
     },
     
     freezeTimer(){
-
       this.answers['answer'] = this.$refs['reportTuples'].answer
 
       this.formErrors = [];
@@ -173,7 +175,10 @@ export default {
       console.log(this.$refs['reportTuples'].answer)
       console.log('Answers:' + this.answers)
       this.finalStoredData['answers_'+(this.questionIndex+1)] = {'github_link':this.answers['answer'], 'min':9-this.minutes,
-        'sec':60-this.seconds}
+        'sec':60-this.seconds, "startTime": this.startTime, "endTime": new Date().toLocaleTimeString()}
+      console.log(this.finalStoredData['answers_'+(this.questionIndex+1)]["startTime"])
+      console.log(this.finalStoredData['answers_'+(this.questionIndex+1)]["endTime"])
+
     },
     
     nextQuestion(){
